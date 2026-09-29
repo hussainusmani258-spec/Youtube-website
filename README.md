@@ -2,7 +2,7 @@
 
 A responsive and pixel-perfect front-end clone of the YouTube Home Page interface built using pure **HTML5** and **CSS3**.
 
-![YouTube Clone Screenshot](./screenshot.png) <!-- Aap apne screenshot ka image path yahan de sakte hain -->
+
 
 ## 🚀 Features
 
