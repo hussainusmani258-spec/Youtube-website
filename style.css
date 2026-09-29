@@ -1,0 +1,305 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            color: #0f0f0f;
+        }
+                .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 56px;
+            padding: 0 16px;
+            background-color: #ffffff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .menu-btn {
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 50%;
+        }
+
+        .menu-btn:hover {
+            background-color: #e5e5e5;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            text-decoration: none;
+            color: #0f0f0f;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .logo-icon {
+            color: #ff0000;
+            font-size: 22px;
+        }
+
+        .header-center {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            width: 40%;
+            max-width: 600px;
+        }
+
+        .search-box {
+            display: flex;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 40px;
+            overflow: hidden;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 8px 16px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .search-btn {
+            background-color: #f8f8f8;
+            border: none;
+            border-left: 1px solid #ccc;
+            padding: 8px 20px;
+            cursor: pointer;
+        }
+
+        .search-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        .mic-btn {
+            background-color: #f2f2f2;
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mic-btn:hover {
+            background-color: #e5e5e5;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .icon-btn {
+            background: none;
+            border: none;
+            font-size: 18px;
+            padding: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .icon-btn:hover {
+            background-color: #e5e5e5;
+        }
+
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #2e7d32;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 56px;
+            height: calc(100vh - 56px);
+            width: 100%;
+        }
+
+        .sidebar {
+            width: 240px;
+            min-width: 230px;
+            background-color: #ffffff;
+            height: 100%;
+            overflow-y: scroll;
+            padding: 12px 0;
+            border-right: 1px solid #e5e5e5;
+        }
+
+        .nav-section {
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            padding: 10px 24px;
+            text-decoration: none;
+            color: #0f0f0f;
+            font-size: 14px;
+            border-radius: 10px;
+            margin: 0 10px;
+        }
+
+        .nav-item:hover {
+            background-color: #f2f2f2;
+        }
+
+        .nav-item i {
+            font-size: 18px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            padding: 8px 24px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #0f0f0f;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            height: 100%;
+            overflow-y: auto;
+            padding: 16px 24px;
+        }
+
+        .categories-bar {
+            display: flex;
+            gap: 12px;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+
+    
+        .chip {
+            background-color: #0000000d;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .chip:hover {
+            background-color: #0000001a;
+        }
+
+        .chip.active
+         {
+            background-color: #0f0f0f;
+            color: #ffffff;
+        }
+
+.youtube{
+    display: flex;
+    margin: 40px;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* width: 20px */
+}
+.card1{
+    width: 300px;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+}
+.time{
+    position: relative;
+   background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 8px;
+    z-index: 999;
+    bottom: 34px;
+    margin-left: 250px;
+}
+img{
+    width: 300px;
+    /* position: absolute; */
+    /* z-index: 3; */
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.video-info{
+   
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+    
+}
+.video-title{
+    
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f0f0f;
+    margin: 0 0 4px 0;
+}
+.video-details {
+    display: flex;
+    flex-direction: column;
+}
+.channel-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #2e7d32;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+
+}
+.thumbnail-container {
+    position: relative; /* TIME BADGE KO ISKE ANDAR LOCK KAREGA */
+    height: 200px;
+    border-radius: 12px;
+   width: 100%;
+   overflow: hidden;
+}
